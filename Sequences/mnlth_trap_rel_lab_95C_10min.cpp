@@ -16,41 +16,41 @@
 // trapping activity from vial on monolith @ 1mL/min, 5mL
 //----------------------------------------------------------------------------//
 00:01.000 valves -s 0xEE // open valve 1 and 5
-00:02.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (1/5)
-01:03.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (2/5)
-02:04.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (3/5)
-03:05.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (4/5)
-04:06.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (5/5)
+00:02.000 pumps -i 0 -s 50 -t 600 -e 0 -a 200 -f 59350 -d 10 // pump 1, 0.5 mL/min, 1 min (1/3)
+01:03.000 pumps -i 0 -s 50 -t 600 -e 0 -a 200 -f 59350 -d 10 // pump 1, 0.5 mL/min, 1 min (2/3)
+02:04.000 pumps -i 0 -s 50 -t 600 -e 0 -a 200 -f 59350 -d 10 // pump 1, 0.5 mL/min, 1 min (3/3)
+03:05.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (1/1)
 // pump 1, 1mL/min, -t top speed 900, acceleration 500, deceleration 0,,n time 60000 ms
-05:10.000 pumps -i 0 -t 0 // stop pump 1, "-i 0" = pump 1
-05:11.000 valves -s 0xFF // close all valves
+04:10.000 pumps -i 0 -t 0 // stop pump 1, "-i 0" = pump 1
+04:11.000 valves -s 0xFF // close all valves
 
 
 // washing monolith to waste vial
 //----------------------------------------------------------------------------//
-05:12.000 valves -s 0xEB // open valve 3 and 5
-05:13.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (1/2)
-06:14.000 pumps -i 0 -s 50 -t 900 -e 0 -a 500 -f 59350 -d 150 // pump 1, 1 mL/min, 1 min (2/2)
-10:15.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
-10:16.000 valves -s 0xFF // close all valves
+04:12.000 valves -s 0xEB // open valve 3 and 5
+04:13.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (1/3)
+05:14.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (2/3)
+06:14.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (3/3)
+07:15.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
+07:16.000 valves -s 0xFF // close all valves
 
 
 // release from monolith to collection vial
 //----------------------------------------------------------------------------//
-10:17.000 valves -s 0x27 // open valve 4 and 7
-10:18.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (1/10)
-11:19.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (2/10)
-12:20.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (3/10)
-13:21.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (4/10)
-14:22.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (5/10)
-15:23.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (6/10)
-16:25.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (7/10)
-16:25.500 peltier -t 95 // heater warm up, temp 95C
-17:26.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (8/10)
-18:27.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (9/10)
-19:28.000 pumps -i 1 -s 50 -t 140 -e 0 -a 500 -f 59350 -d 150 // pump 2, 0.1 mL/min, 1 min (10/10)
-20:30.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
-20:31.000 valves -s 0xFF // close all valves
+07:17.000 valves -s 0x27 // open valve 4 and 7
+07:18.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 27000 -d 10 // pump 2, 1 mL/min, 1 min (1/1)
+07:48.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (1/6)
+08:49.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (2/6)
+09:50.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (3/6)
+10:51.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (4/6)
+11:52.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (5/6)
+12:53.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (6/6)
+13:53.500 peltier -t 95 // heater warm up, temp 95C
+13:54.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (1/2)
+14:55.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (2/2)
+
+15:56.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
+15:57.000 valves -s 0xFF // close all valves
 
 
 // labelling in the collection vial with heater, 95C, 5min
