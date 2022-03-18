@@ -1,9 +1,5 @@
-// Monolith - Trap, Wash, Release and Radiolabelling
+// Monolith - prime / wash all reagent lines
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
-
-// trap volume - 3mL
-// wash volume - 
-// release volume - 1mL
 
 
 // initial setup
@@ -37,7 +33,7 @@
 // prime & wash release line
 //----------------------------------------------------------------------------//
 02:09.000 valves -s 0x27 // open valve 4 and 7
-02:10.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 27000 -d 10 // pump 2, 1 mL/min, 1 min (1/1)
+02:10.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (1/1)
 03:12.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
 03:13.000 valves -s 0xFF // close all valves
 
