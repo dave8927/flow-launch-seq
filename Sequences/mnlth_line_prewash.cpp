@@ -16,7 +16,7 @@
 // prime wash Ga and monolith lines
 //----------------------------------------------------------------------------//
 00:01.000 valves -s 0xEE // open valve 1 and 5
-01:02.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (1/1)
+00:02.000 pumps -i 0 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 1, 1 mL/min, 1 min (1/1)
 // pump 1, 1mL/min, -t top speed 900, acceleration 500, deceleration 0,,n time 60000 ms
 01:03.000 pumps -i 0 -t 0 // stop pump 1, "-i 0" = pump 1
 01:04.000 valves -s 0xFF // close all valves
