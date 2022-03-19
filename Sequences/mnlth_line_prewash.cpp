@@ -40,6 +40,6 @@
 
 // final steps
 //----------------------------------------------------------------------------//
-03:02.000 user -s // open all valves
-03:05.000 dialog "Wash-prime run complete" // text in " " will be 
+03:14.000 user -s // open all valves
+03:15.000 dialog "Wash-prime run complete" // text in " " will be 
 // displayed in a dialog control, the text in this comment will be outputted to the log
