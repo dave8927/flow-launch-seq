@@ -27,5 +27,5 @@
 // Completion steps
 //----------------------------------------------------------------------------//
 25:30.000 user -s // open all valves
-26:00.000 dialog "Workflow complete, remove vial from heating area to cool" // text in " " will be 
-// displayed in a dialog control, the text in this comment will be outputted to the log
+26:00.000 dialog "Workflow complete, remove vial from heating area to cool"
+
