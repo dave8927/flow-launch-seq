@@ -1,6 +1,9 @@
 // Monolith - Trap, Wash, Release and Radiolabelling
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
+// trap volume: ~1.5 mL
+// wash volume: <3 mL
+// release volume: ~600 uL
 
 // initial setup
 //----------------------------------------------------------------------------//
