@@ -26,6 +26,6 @@
 
 // Completion steps
 //----------------------------------------------------------------------------//
-12:06.000 user -s // open all valves
-12:07.000 dialog "Workflow complete, remove vial from heating area to cool"
+30:06.000 user -s // open all valves
+30:07.000 dialog "Workflow complete, remove vial from heating area to cool"
 
