@@ -21,11 +21,11 @@
 //----------------------------------------------------------------------------//
 00:01.000 peltier -t 120 // preheat to 120C for 2 min
 05:01.000 peltier -t 120 // heat at 120 for 10 min
-30:05.000 peltier -t 0 // turn off heater, temp 0C
+20:05.000 peltier -t 0 // turn off heater, temp 0C
 
 
 // Completion steps
 //----------------------------------------------------------------------------//
-30:06.000 user -s // open all valves
-30:07.000 dialog "Workflow complete, remove vial from heating area to cool"
+20:06.000 user -s // open all valves
+20:07.000 dialog "Workflow complete, remove vial from heating area to cool"
 
