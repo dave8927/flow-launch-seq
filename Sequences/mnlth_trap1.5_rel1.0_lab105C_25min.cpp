@@ -66,10 +66,10 @@
 // prompt to move vial
 //----------------------------------------------------------------------------//
 20:02.000 dialog "Sequence Paused. Release complete. Move vial to hot plate and press ok to heat for 15min @105C"
-45:02.000 peltier -t 0 // turn of heating
-45:03.000 dialog "15min heating time complete. Move vial to cool. Press ok to complete run."
+35:02.000 peltier -t 0 // turn of heating
+35:03.000 dialog "15min heating time complete. Move vial to cool. Press ok to complete run."
 
 // final steps
 //----------------------------------------------------------------------------//
-45:05.000 user -s // open all valves
+35:05.000 user -s // open all valves
 
