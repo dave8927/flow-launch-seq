@@ -1,9 +1,10 @@
 // Monolith - Trap, Wash, Release and Radiolabelling
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 
-// trap volume - 3mL
-// wash volume - 
-// release volume - 1mL
+// trap volume - 1-15 mL
+// wash volume - 2 mL
+// release volume - 1 mL
+// label at 105C for 15min
 
 
 // initial setup
