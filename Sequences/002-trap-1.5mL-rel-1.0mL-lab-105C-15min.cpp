@@ -4,7 +4,7 @@
 // trap volume - 1-15 mL
 // wash volume - 2 mL
 // release volume - 1 mL
-// label at 105C for 15min 
+// label at 105C for 15min
 
 
 // initial setup
