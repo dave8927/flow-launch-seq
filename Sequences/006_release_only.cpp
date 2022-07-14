@@ -23,14 +23,14 @@
 04:39.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (6/7)
 05:40.000 pumps -i 1 -s 50 -t 150 -e 0 -a 200 -f 59350 -d 10 // pump 2, 0.1 mL/min, 1 min (7/7)
 06:41.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (1/2)
-08:42.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (2/2)
+07:42.000 pumps -i 1 -s 50 -t 1000 -e 0 -a 200 -f 59350 -d 10 // pump 2, 1 mL/min, 1 min (2/2)
 
-09:43.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
-09:44.000 valves -s 0xFF // close all valves
+08:43.000 pumps -i 1 -t 0 // stop pump 2, "-i 1" = pump 2
+08:44.000 valves -s 0xFF // close all valves
 
 
 // final steps
 //----------------------------------------------------------------------------//
-09:45.000 user -s // open all valves
-09:47.000 dialog "Workflow complete, collect product, replace tubing when cold" // text in " " will be 
+08:45.000 user -s // open all valves
+08:47.000 dialog "Workflow complete, collect product, replace tubing when cold" // text in " " will be 
 // displayed in a dialog control, the text in this comment will be outputted to the log
